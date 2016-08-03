@@ -954,7 +954,12 @@ function getPointDistance(pointA, pointB) {
 }
 
 function sendTweet(name, lat, lng, disTime) {
-	console.log("Tweet: " + name + " - " + lat + ", " + lng + " - " + disTime);
+	var d = new Date(disTime);
+	var datestring = 
+		("0" + d.getDate()).slice(-2) + "/" + ("0"+(d.getMonth()+1)).slice(-2) + "/" + d.getFullYear() + " " +
+		("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+
+	console.log("Tweet: " + name + " - " + lat + ", " + lng + " - " + datestring);
 }
 
 function sendNotification(title, text, icon, lat, lng) {
