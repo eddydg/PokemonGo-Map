@@ -7,6 +7,7 @@ encounteredPokemonIds = []
 #twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 
 pokemonList = [
+        'NONE', # Pokemons id start from 0
 	'Bulbizarre'
 	'Herbizarre',
 	'Florizarre',
